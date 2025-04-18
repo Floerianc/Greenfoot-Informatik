@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Tree
+comment0.text=\r\n\ Diese\ Klasse\ stellt\ einen\ Baum\ zur\ Verfuegung.\ \r\n\ \r\n\ Baeume\ sind\ ein\ Hindernis\ fuer\ Kara.\ Kara\ kann\ Baeume\ weder\ ueberqueren,\ noch\r\n\ wegschieben.\r\n\r\n\ @author\ Marco\ Jakob\r\n\ @version\ 20.01.2011\r\n
+comment1.params=world
+comment1.target=void\ addedToWorld(greenfoot.World)
+comment1.text=\r\n\ Diese\ Methode\ wird\ aufgerufen,\ sobald\ ein\ Baum-Objekt\ auf\ der\ Welt\ platziert\ wurde.\r\n\ Es\ wird\ ueberprueft,\ ob\ der\ Baum\ auf\ dieses\ Feld\ gesetzt\ werden\ darf.\ Falls\ nicht,\ wird\ eine\ \r\n\ Fehlermeldung\ ausgegeben.\r\n
+numComments=2

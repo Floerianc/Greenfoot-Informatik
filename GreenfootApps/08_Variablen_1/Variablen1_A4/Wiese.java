@@ -1,0 +1,416 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Diese Klasse erstellt eine Welt für Kara. Sie enthaelt Einstellungen ueber
+ * die Hoehe und Breite der Welt und initialisiert alle Actors.
+ * 
+ * @author Marco Jakob
+ * @version 04.04.2011
+ */
+public class Wiese extends World 
+{   
+    private static final int WORLD_WIDTH = 15;  // Anzahl der Zellen horizontal
+    private static final int WORLD_HEIGHT = 15;  // Anzahl der Zellen vertikal
+
+    private static final int CELL_SIZE = 28; // Groesse einer einzelnen Zelle
+
+    /**
+     * Erstellt eine Welt fuer Kara.
+     */
+    public Wiese() 
+    {
+        // Erzeugt eine neue Welt
+        super(WORLD_WIDTH, WORLD_HEIGHT, CELL_SIZE);
+
+        setPaintOrder(Kara.class, Tree.class, Mushroom.class, Leaf.class);
+        Greenfoot.setSpeed(15);
+
+        // Erzeuge die Anfangs-Objekte fuer die Welt.
+        prepare();
+    }
+
+    /**
+     * Bereite die Welt fuer den Programmstart vor. Das heisst: Erzeuge die Anfangs-
+     * Objekte und fuege sie der Welt hinzu.
+     * 
+     * Tipp: Die Objekte zuerst mit der Maus in der Welt platzieren. Anschliessend 
+     * Rechtsklick auf die Welt, dann 'Die Welt speichern' auswaehlen. So werden alle
+     * Objekte automatisch in diese Methode geschrieben.
+     */
+    private void prepare() 
+    {
+
+        Tree tree = new Tree();
+        addObject(tree,0,0);
+        Tree tree2 = new Tree();
+        addObject(tree2,1,0);
+        Tree tree3 = new Tree();
+        addObject(tree3,2,0);
+        Tree tree4 = new Tree();
+        addObject(tree4,3,0);
+        Tree tree5 = new Tree();
+        addObject(tree5,4,0);
+        Tree tree6 = new Tree();
+        addObject(tree6,5,0);
+        Tree tree7 = new Tree();
+        addObject(tree7,6,0);
+        Tree tree8 = new Tree();
+        addObject(tree8,7,0);
+        Tree tree9 = new Tree();
+        addObject(tree9,8,0);
+        Tree tree10 = new Tree();
+        addObject(tree10,9,0);
+        Tree tree11 = new Tree();
+        addObject(tree11,10,0);
+        Tree tree12 = new Tree();
+        addObject(tree12,11,0);
+        Tree tree13 = new Tree();
+        addObject(tree13,12,0);
+        Tree tree14 = new Tree();
+        addObject(tree14,13,0);
+        Tree tree15 = new Tree();
+        addObject(tree15,14,0);
+        Tree tree16 = new Tree();
+        addObject(tree16,14,1);
+        Tree tree17 = new Tree();
+        addObject(tree17,14,2);
+        Tree tree18 = new Tree();
+        addObject(tree18,14,3);
+        Tree tree19 = new Tree();
+        addObject(tree19,14,4);
+        Tree tree20 = new Tree();
+        addObject(tree20,14,5);
+        Tree tree21 = new Tree();
+        addObject(tree21,14,6);
+        Tree tree22 = new Tree();
+        addObject(tree22,14,7);
+        Tree tree23 = new Tree();
+        addObject(tree23,14,8);
+        Tree tree24 = new Tree();
+        addObject(tree24,14,9);
+        Tree tree25 = new Tree();
+        addObject(tree25,14,10);
+        Tree tree26 = new Tree();
+        addObject(tree26,14,11);
+        Tree tree27 = new Tree();
+        addObject(tree27,14,12);
+        Tree tree28 = new Tree();
+        addObject(tree28,14,13);
+        Tree tree29 = new Tree();
+        addObject(tree29,14,14);
+        Tree tree30 = new Tree();
+        addObject(tree30,13,14);
+        Tree tree31 = new Tree();
+        addObject(tree31,12,14);
+        Tree tree32 = new Tree();
+        addObject(tree32,11,14);
+        Tree tree33 = new Tree();
+        addObject(tree33,10,14);
+        Tree tree34 = new Tree();
+        addObject(tree34,9,14);
+        Tree tree35 = new Tree();
+        addObject(tree35,8,14);
+        Tree tree36 = new Tree();
+        addObject(tree36,7,14);
+        Tree tree37 = new Tree();
+        addObject(tree37,6,14);
+        Tree tree38 = new Tree();
+        addObject(tree38,5,14);
+        Tree tree39 = new Tree();
+        addObject(tree39,4,14);
+        Tree tree40 = new Tree();
+        addObject(tree40,3,14);
+        Tree tree41 = new Tree();
+        addObject(tree41,2,14);
+        Tree tree42 = new Tree();
+        addObject(tree42,1,14);
+        Tree tree43 = new Tree();
+        addObject(tree43,0,14);
+        Tree tree44 = new Tree();
+        addObject(tree44,0,13);
+        Tree tree45 = new Tree();
+        addObject(tree45,0,12);
+        Tree tree46 = new Tree();
+        addObject(tree46,0,11);
+        Tree tree47 = new Tree();
+        addObject(tree47,0,10);
+        Tree tree48 = new Tree();
+        addObject(tree48,0,9);
+        Tree tree49 = new Tree();
+        addObject(tree49,0,8);
+        Tree tree50 = new Tree();
+        addObject(tree50,0,7);
+        Tree tree51 = new Tree();
+        addObject(tree51,0,6);
+        Tree tree52 = new Tree();
+        addObject(tree52,0,5);
+        Tree tree53 = new Tree();
+        addObject(tree53,0,4);
+        Tree tree54 = new Tree();
+        addObject(tree54,0,3);
+        Tree tree55 = new Tree();
+        addObject(tree55,0,2);
+        Tree tree56 = new Tree();
+        addObject(tree56,1,2);
+        Tree tree57 = new Tree();
+        addObject(tree57,2,2);
+        Tree tree58 = new Tree();
+        addObject(tree58,3,2);
+        Tree tree59 = new Tree();
+        addObject(tree59,4,2);
+        Tree tree60 = new Tree();
+        addObject(tree60,5,2);
+        Tree tree61 = new Tree();
+        addObject(tree61,6,2);
+        Tree tree62 = new Tree();
+        addObject(tree62,7,2);
+        Tree tree63 = new Tree();
+        addObject(tree63,8,2);
+        Tree tree64 = new Tree();
+        addObject(tree64,9,2);
+        Tree tree65 = new Tree();
+        addObject(tree65,10,2);
+        Tree tree66 = new Tree();
+        addObject(tree66,11,2);
+        Tree tree67 = new Tree();
+        addObject(tree67,12,2);
+        Tree tree68 = new Tree();
+        addObject(tree68,13,4);
+        Tree tree69 = new Tree();
+        addObject(tree69,12,4);
+        Tree tree70 = new Tree();
+        addObject(tree70,11,4);
+        Tree tree71 = new Tree();
+        addObject(tree71,10,4);
+        Tree tree72 = new Tree();
+        addObject(tree72,9,4);
+        Tree tree73 = new Tree();
+        addObject(tree73,8,4);
+        Tree tree74 = new Tree();
+        addObject(tree74,7,4);
+        Tree tree75 = new Tree();
+        addObject(tree75,6,4);
+        Tree tree76 = new Tree();
+        addObject(tree76,5,4);
+        Tree tree77 = new Tree();
+        addObject(tree77,4,4);
+        Tree tree78 = new Tree();
+        addObject(tree78,3,4);
+        Tree tree79 = new Tree();
+        addObject(tree79,2,4);
+        Tree tree80 = new Tree();
+        addObject(tree80,1,6);
+        Tree tree81 = new Tree();
+        addObject(tree81,3,6);
+        Tree tree82 = new Tree();
+        addObject(tree82,4,6);
+        Tree tree83 = new Tree();
+        addObject(tree83,5,6);
+        Tree tree84 = new Tree();
+        addObject(tree84,6,6);
+        Tree tree85 = new Tree();
+        addObject(tree85,7,6);
+        Tree tree86 = new Tree();
+        addObject(tree86,8,6);
+        Tree tree87 = new Tree();
+        addObject(tree87,9,6);
+        Tree tree88 = new Tree();
+        addObject(tree88,10,6);
+        Tree tree89 = new Tree();
+        addObject(tree89,11,6);
+        Tree tree90 = new Tree();
+        addObject(tree90,12,6);
+        Tree tree91 = new Tree();
+        addObject(tree91,13,8);
+        Tree tree92 = new Tree();
+        addObject(tree92,12,8);
+        Tree tree93 = new Tree();
+        addObject(tree93,11,8);
+        Tree tree94 = new Tree();
+        addObject(tree94,10,8);
+        Tree tree95 = new Tree();
+        addObject(tree95,9,8);
+        Tree tree96 = new Tree();
+        addObject(tree96,8,8);
+        Tree tree97 = new Tree();
+        addObject(tree97,7,8);
+        Tree tree98 = new Tree();
+        addObject(tree98,6,8);
+        Tree tree99 = new Tree();
+        addObject(tree99,5,8);
+        Tree tree100 = new Tree();
+        addObject(tree100,4,8);
+        Tree tree101 = new Tree();
+        addObject(tree101,3,8);
+        Tree tree102 = new Tree();
+        addObject(tree102,2,8);
+        Tree tree103 = new Tree();
+        addObject(tree103,1,10);
+        Tree tree104 = new Tree();
+        addObject(tree104,2,10);
+        Tree tree105 = new Tree();
+        addObject(tree105,3,10);
+        Tree tree106 = new Tree();
+        addObject(tree106,4,10);
+        Tree tree107 = new Tree();
+        addObject(tree107,5,10);
+        Tree tree108 = new Tree();
+        addObject(tree108,6,10);
+        Tree tree109 = new Tree();
+        addObject(tree109,7,10);
+        Tree tree110 = new Tree();
+        addObject(tree110,8,10);
+        Tree tree111 = new Tree();
+        addObject(tree111,9,10);
+        Tree tree112 = new Tree();
+        addObject(tree112,10,10);
+        Tree tree113 = new Tree();
+        addObject(tree113,11,10);
+        Tree tree114 = new Tree();
+        addObject(tree114,12,10);
+        Tree tree115 = new Tree();
+        addObject(tree115,13,12);
+        Tree tree116 = new Tree();
+        addObject(tree116,12,12);
+        Tree tree117 = new Tree();
+        addObject(tree117,11,12);
+        Tree tree118 = new Tree();
+        addObject(tree118,10,12);
+        Tree tree119 = new Tree();
+        addObject(tree119,9,12);
+        Tree tree120 = new Tree();
+        addObject(tree120,8,12);
+        Tree tree121 = new Tree();
+        addObject(tree121,7,12);
+        Tree tree122 = new Tree();
+        addObject(tree122,6,12);
+        Tree tree123 = new Tree();
+        addObject(tree123,5,12);
+        Tree tree124 = new Tree();
+        addObject(tree124,4,12);
+        Tree tree125 = new Tree();
+        addObject(tree125,3,12);
+        Tree tree126 = new Tree();
+        addObject(tree126,2,12);
+        MyKara myKara = new MyKara();
+        addObject(myKara,0,1);
+        Leaf leaf = new Leaf();
+        addObject(leaf,3,1);
+        Leaf leaf2 = new Leaf();
+        addObject(leaf2,4,1);
+        Leaf leaf3 = new Leaf();
+        addObject(leaf3,5,1);
+        Leaf leaf4 = new Leaf();
+        addObject(leaf4,6,1);
+        Leaf leaf5 = new Leaf();
+        addObject(leaf5,7,1);
+        Leaf leaf6 = new Leaf();
+        addObject(leaf6,9,1);
+        Leaf leaf7 = new Leaf();
+        addObject(leaf7,10,1);
+        Leaf leaf8 = new Leaf();
+        addObject(leaf8,11,1);
+        Leaf leaf9 = new Leaf();
+        addObject(leaf9,13,1);
+        Leaf leaf10 = new Leaf();
+        addObject(leaf10,13,2);
+        Leaf leaf11 = new Leaf();
+        addObject(leaf11,12,3);
+        Leaf leaf12 = new Leaf();
+        addObject(leaf12,11,3);
+        Leaf leaf13 = new Leaf();
+        addObject(leaf13,10,3);
+        Leaf leaf14 = new Leaf();
+        addObject(leaf14,9,3);
+        Leaf leaf15 = new Leaf();
+        addObject(leaf15,8,3);
+        Leaf leaf16 = new Leaf();
+        addObject(leaf16,7,3);
+        Leaf leaf17 = new Leaf();
+        addObject(leaf17,6,3);
+        Leaf leaf18 = new Leaf();
+        addObject(leaf18,5,3);
+        Leaf leaf19 = new Leaf();
+        addObject(leaf19,4,3);
+        Leaf leaf20 = new Leaf();
+        addObject(leaf20,2,3);
+        Leaf leaf21 = new Leaf();
+        addObject(leaf21,1,4);
+        Leaf leaf22 = new Leaf();
+        addObject(leaf22,2,5);
+        Leaf leaf23 = new Leaf();
+        addObject(leaf23,4,5);
+        Leaf leaf24 = new Leaf();
+        addObject(leaf24,8,5);
+        Leaf leaf25 = new Leaf();
+        addObject(leaf25,9,5);
+        Leaf leaf26 = new Leaf();
+        addObject(leaf26,10,5);
+        Leaf leaf27 = new Leaf();
+        addObject(leaf27,11,5);
+        Leaf leaf28 = new Leaf();
+        addObject(leaf28,12,5);
+        Leaf leaf29 = new Leaf();
+        addObject(leaf29,13,5);
+        Leaf leaf30 = new Leaf();
+        addObject(leaf30,13,6);
+        Leaf leaf31 = new Leaf();
+        addObject(leaf31,13,7);
+        Leaf leaf32 = new Leaf();
+        addObject(leaf32,10,7);
+        Leaf leaf33 = new Leaf();
+        addObject(leaf33,9,7);
+        Leaf leaf34 = new Leaf();
+        addObject(leaf34,7,7);
+        Leaf leaf35 = new Leaf();
+        addObject(leaf35,6,7);
+        Leaf leaf36 = new Leaf();
+        addObject(leaf36,5,7);
+        Leaf leaf37 = new Leaf();
+        addObject(leaf37,3,7);
+        Leaf leaf38 = new Leaf();
+        addObject(leaf38,1,7);
+        Leaf leaf39 = new Leaf();
+        addObject(leaf39,1,8);
+        Leaf leaf40 = new Leaf();
+        addObject(leaf40,2,9);
+        Leaf leaf41 = new Leaf();
+        addObject(leaf41,3,9);
+        Leaf leaf42 = new Leaf();
+        addObject(leaf42,5,9);
+        Leaf leaf43 = new Leaf();
+        addObject(leaf43,7,9);
+        Leaf leaf44 = new Leaf();
+        addObject(leaf44,11,9);
+        Leaf leaf45 = new Leaf();
+        addObject(leaf45,12,9);
+        Leaf leaf46 = new Leaf();
+        addObject(leaf46,13,9);
+        Leaf leaf47 = new Leaf();
+        addObject(leaf47,13,10);
+        Leaf leaf48 = new Leaf();
+        addObject(leaf48,11,11);
+        Leaf leaf49 = new Leaf();
+        addObject(leaf49,10,11);
+        Leaf leaf50 = new Leaf();
+        addObject(leaf50,9,11);
+        Leaf leaf51 = new Leaf();
+        addObject(leaf51,7,11);
+        Leaf leaf52 = new Leaf();
+        addObject(leaf52,5,11);
+        Leaf leaf53 = new Leaf();
+        addObject(leaf53,2,11);
+        Leaf leaf54 = new Leaf();
+        addObject(leaf54,1,11);
+        Leaf leaf55 = new Leaf();
+        addObject(leaf55,2,13);
+        Leaf leaf56 = new Leaf();
+        addObject(leaf56,6,13);
+        Leaf leaf57 = new Leaf();
+        addObject(leaf57,9,13);
+        Leaf leaf58 = new Leaf();
+        addObject(leaf58,12,13);
+        Leaf leaf59 = new Leaf();
+        addObject(leaf59,13,13);
+    }
+}

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=MyKara
+comment0.text=\r\n\ Die\ Klasse\ MyKara\ ist\ eine\ Unterklasse\ von\ Kara.\r\n\ Sie\ erbt\ damit\ alle\ Methoden\ der\ Klasse\ Kara\:\r\n\ \r\n\ Aktionen\:\ \ \ \ move(),\ turnLeft(),\ turnRight(),\ putLeaf(),\ removeLeaf()\r\n\ Sensoren\:\ \ \ \ onLeaf(),\ treeFront(),\ treeLeft(),\ treeRight(),\ mushroomFront()\r\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Kara\ soll\ einen\ *beliebigen*,\ *rechteckigen*\ Wald\ patroullieren\r\n
+comment2.params=
+comment2.target=void\ goAroundTree()
+comment2.text=\r\n\ Lets\ Kara\ walk\ around\ a\ tree.\ Must\ be\ a\ 1-cell-wide\ Tree,\ but\ height\r\n\ can\ be\ any\ height.\r\n
+comment3.params=steps
+comment3.target=void\ moveMultipleSteps(int)
+comment3.text=\r\n\ @param\ steps\ amount\ of\ steps\ that\ you\ want\ to\ move\r\n
+numComments=4
